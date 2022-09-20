@@ -1,9 +1,11 @@
+body {
+}
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -15,45 +17,65 @@
 }
 
 input {
-  border: 1px solid palevioletred;
+  border: 1px solid white;
   background: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 40px;
+  background-color: white;
 }
 #form :first-child {
-  width: 80%;
-  height: 40px;
+  width: 76%;
+  height: 45px;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
+  outline: none;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.09);
 }
 
 #form :last-child {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  width: 18%;
+  width: 22%;
   box-sizing: border-box;
+  transition: 0.1s linear;
+  cursor: pointer;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#form :last-child:hover {
+  background-color: rgba(204, 18, 98, 0.705);
+  border: none;
+  color: white;
 }
 
 .list-item {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 60px;
+  min-height: 60px;
   font-family: sans-serif;
   font-weight: 100;
   justify-content: space-between;
   font-size: 10px;
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.09);
   margin-top: 20px;
-  /* background-color: rgba(0, 0, 0, 0.3); */
+
   border-radius: 40px;
-  padding: 5px 20px 5px 20px;
+  padding: 10px 13px 10px 20px;
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.56);
+  word-wrap: break-word;
+  background-color: white;
+  transition: 0.1s linear;
+  cursor: pointer;
 }
-
+.list-item:hover {
+  background-color: rgba(175, 14, 113, 0.49);
+  color: white;
+  border: none;
+  box-shadow: 4px 4px 14px rgba(175, 14, 113, 0.49);
+}
 .list {
   display: none;
   width: 100%;
@@ -62,15 +84,24 @@ input {
   justify-content: center;
   padding: 5px 20px 20px 20px;
   align-items: center;
-  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.03);
+  box-shadow: 14px 14px 34px rgba(212, 212, 212, 0.53);
   box-sizing: border-box;
   border-radius: 40px;
+  background-color: white;
 }
 h1 {
   margin: 0px;
-  margin-left: 10px;
-  width: 90%;
+  margin-left: -5px;
+  width: 80%;
 }
 
 .check {
+  width: 40px;
+  cursor: pointer;
+}
+
+.button {
+  border: 1px solid palevioletred;
+  border-radius: 300px;
+  cursor: pointer;
 }
